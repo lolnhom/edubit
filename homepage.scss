@@ -147,6 +147,7 @@ table {
   --white: #ffffff;
   --chacoarl: #303030;
   --orange: #fa6435;
+  --dark-blue: #637381;
 }
 /* HomePage */
 body {
@@ -159,6 +160,7 @@ body {
     rgba(18, 165, 244, 1) 0%,
     rgba(18, 165, 244, 0.5) 100%
   );
+  position: relative;
   .nav {
     padding: 16px 0px;
     &__menu {
@@ -296,13 +298,76 @@ body {
       }
     }
   }
-  .sdata {
-    .sdata__container {
-      .sdata__item {
-        margin-right: 16px;
-        .sdata__item-title {
-          margin-bottom: 4px;
-        }
+}
+
+.sdata {
+  .sdata__container {
+    padding: 0px 145px;
+    position: relative;
+    bottom: 68px;
+    .sdata__item {
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--white);
+      box-shadow: 0px 4px 15px rgba(65, 93, 112, 0.15);
+      border-radius: 24px;
+      min-height: 128px;
+      .sdata__item-title {
+        margin-bottom: 8px;
+        color: var(--primary-color);
+        font-size: 25px;
+        font-weight: 900;
+      }
+      .sdata__item-description {
+        font-size: 14px;
+        color: var(--dark-blue);
+      }
+    }
+    .sdata__item:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+}
+.content {
+  &__title {
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--chacoarl);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    span {
+      color: var(--primary-color);
+    }
+  }
+  &__description {
+    color: var(--dark-blue);
+    max-width: 745px;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+  }
+  &__feature {
+    margin-top: 50px;
+    .content__item {
+      background-color: var(--white);
+      box-shadow: 0px 4px 15px rgb(4 4 4 / 25%);
+      padding: 14px 16px;
+      border-radius: 16px;
+      img {
+        width: 100%;
+      }
+      &-title {
+        color: var(--primary-color);
+        font-size: 18px;
+        font-weight: 700;
+        margin: 12px 0px 8px 0px;
+      }
+      &-description {
+        font-size: 14px;
+        color: var(--dark-blue);
+        line-height: 20px;
+        letter-spacing: 0.3px;
       }
     }
   }

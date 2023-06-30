@@ -143,6 +143,7 @@ table {
   --white: #ffffff;
   --chacoarl: #303030;
   --orange: #fa6435;
+  --dark-blue: #637381;
 }
 
 /* HomePage */
@@ -153,6 +154,7 @@ body {
 .header {
   height: 640px;
   background: linear-gradient(180deg, rgb(18, 165, 244) 0%, rgba(18, 165, 244, 0.5) 100%);
+  position: relative;
 }
 .header .nav {
   padding: 16px 0px;
@@ -285,9 +287,73 @@ body {
   padding: 12px;
   min-width: 158px;
 }
-.header .sdata .sdata__container .sdata__item {
+
+.sdata .sdata__container {
+  padding: 0px 145px;
+  position: relative;
+  bottom: 68px;
+}
+.sdata .sdata__container .sdata__item {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  box-shadow: 0px 4px 15px rgba(65, 93, 112, 0.15);
+  border-radius: 24px;
+  min-height: 128px;
+}
+.sdata .sdata__container .sdata__item .sdata__item-title {
+  margin-bottom: 8px;
+  color: var(--primary-color);
+  font-size: 25px;
+  font-weight: 900;
+}
+.sdata .sdata__container .sdata__item .sdata__item-description {
+  font-size: 14px;
+  color: var(--dark-blue);
+}
+.sdata .sdata__container .sdata__item:not(:last-child) {
   margin-right: 16px;
 }
-.header .sdata .sdata__container .sdata__item .sdata__item-title {
-  margin-bottom: 4px;
+
+.content__title {
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--chacoarl);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.content__title span {
+  color: var(--primary-color);
+}
+.content__description {
+  color: var(--dark-blue);
+  max-width: 745px;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
+.content__feature {
+  margin-top: 50px;
+}
+.content__feature .content__item {
+  background-color: var(--white);
+  box-shadow: 0px 4px 15px rgba(4, 4, 4, 0.25);
+  padding: 14px 16px;
+  border-radius: 16px;
+}
+.content__feature .content__item img {
+  width: 100%;
+}
+.content__feature .content__item-title {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 12px 0px 8px 0px;
+}
+.content__feature .content__item-description {
+  font-size: 14px;
+  color: var(--dark-blue);
+  line-height: 20px;
+  letter-spacing: 0.3px;
 }/*# sourceMappingURL=homepage.css.map */
