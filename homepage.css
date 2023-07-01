@@ -146,12 +146,35 @@ table {
   --dark-blue: #637381;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.p-8 {
+  padding: 0px 8px;
+}
+
 /* HomePage */
 body {
   font-family: Roboto1;
 }
 
 .header {
+  max-height: 640px;
   height: 640px;
   background: linear-gradient(180deg, rgb(18, 165, 244) 0%, rgba(18, 165, 244, 0.5) 100%);
   position: relative;
@@ -208,11 +231,10 @@ body {
 .header .nav__menu-ul li .btn__dropdown:focus {
   box-shadow: none !important;
 }
-.header .nav__menu-ul li .btn__dropdown:focus-visible {
+.header .nav__menu-ul li .btn__dropdown:active:focus {
   outline: none;
 }
 .header .nav__menu-ul li .nav__menu-ul1 {
-  padding: 8px;
   border: none;
 }
 .header .nav__menu-ul li .nav__menu-ul1 > a {
@@ -220,12 +242,16 @@ body {
   color: var(--chacoarl);
   border-radius: 4px;
   padding: 12px 10px;
+  font-weight: 400px;
 }
 .header .nav__menu-ul li .nav__menu-ul1 > a:hover {
   background-color: #f8f9fa;
 }
 .header .nav__menu-ul li:hover > a::after {
   background-color: var(--white);
+}
+.header .nav__menu-ul .nav__menu-ul1:hover > a::after {
+  background-color: transparent;
 }
 .header .nav__menu-ul li:not(:last-child) {
   margin-right: 16px;
@@ -234,6 +260,8 @@ body {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
+  display: flex;
+  justify-content: flex-end;
 }
 .header .nav__account .btn-login {
   color: var(--white);
@@ -249,6 +277,10 @@ body {
 .header .nav__account .btn-signin {
   border-radius: 8px;
   font-weight: 600;
+  padding: 12px;
+}
+.header .nav__logo img {
+  cursor: pointer;
 }
 .header .banner {
   margin-top: 40px;
@@ -258,7 +290,7 @@ body {
   font-weight: 900;
   color: var(--white);
   line-height: 51px;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
 }
 .header .banner__content-heading span {
   color: var(--orange);
@@ -270,6 +302,7 @@ body {
   margin-bottom: 16px;
   color: var(--white);
   padding: 4px 0px;
+  display: flex;
 }
 .header .banner__content-description .banner__content-item img {
   margin-right: 8px;
@@ -291,8 +324,14 @@ body {
   padding: 12px;
   min-width: 158px;
 }
+.header .banner .banner__image > img {
+  width: 100%;
+}
 
 .sdata .sdata__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0px 145px;
   position: relative;
   bottom: 68px;
@@ -305,6 +344,10 @@ body {
   box-shadow: 0px 4px 15px rgba(65, 93, 112, 0.15);
   border-radius: 24px;
   min-height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .sdata .sdata__container .sdata__item .sdata__item-title {
   margin-bottom: 8px;
@@ -320,6 +363,12 @@ body {
   margin-right: 16px;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .content__title {
   font-size: 25px;
   font-weight: 900;
@@ -364,10 +413,42 @@ body {
   letter-spacing: 0.3px;
   min-height: 40px;
 }
-.content__feature .content__item:hover {
-  transform: scale(1.1);
-  z-index: 1000;
+
+.init {
+  margin-top: 80px;
+  background: linear-gradient(180deg, rgb(18, 165, 244) 0%, rgba(18, 165, 244, 0.5) 100%);
+  border-radius: 16px;
+  height: 294px;
 }
-.content__feature .p-8 {
-  padding: 0px 8px !important;
+.init .init__container {
+  height: 294px;
+}
+.init .init__container .init__content {
+  color: var(--white);
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.init .init__container .init__content .init__content-heading {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.init .init__container .init__content .init__content-description {
+  font-size: 16px;
+  margin: 16px 0px;
+  padding: 0px 60px 0px 0px;
+  line-height: 25px;
+}
+.init .init__container .init__content .btn-init {
+  background-color: var(--orange);
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  padding: 12px;
+  border-radius: 8px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=homepage.css.map */
