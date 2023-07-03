@@ -1,485 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
-    <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    />
 
-    <!-- jQuery library -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
 
-    <!-- Popper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./homepage.css" />
-  </head>
+  <!-- Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
-  <body>
-    <header class="container-fluid header">
-      <div
-        class="nav container d-flex justify-content-center align-items-center"
-      >
-        <div class="row w-100">
-          <div class="col-lg-2 nav__logo d-flex justify-content-center">
-            <img src="./asset/logoedubit.svg" alt="logo-edubit" />
-          </div>
-          <div class="col-6 nav__menu">
-            <ul class="nav__menu-ul">
-              <li class="dropdown">
-                <button
-                  class="btn btn__dropdown dropdown-toggle"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Dịch vụ
-                </button>
-                <ul
-                  class="dropdown-menu nav__menu-ul1"
-                  aria-labelledby="dropdownMenuButton"
-                >
-                  <a class="dropdown-item" href="#">Dịch vụ quay dựng</a>
-                  <a class="dropdown-item" href="#">Dịch vụ Onboarding</a>
-                </ul>
-              </li>
-              <li>
-                <a href="#">Quiz</a>
-              </li>
-              <li>
-                <a href="#">Hướng Dẫn</a>
-              </li>
-              <li>
-                <a href="#">Bảng Giá</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4 nav__account d-flex justify-content-end">
-            <button type="button" class="btn btn-login">Đăng nhập</button>
-            <button type="button" class="btn btn-signin">
-              Tạo Website ngay
-            </button>
-          </div>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./homepage.css" />
+</head>
+
+<body>
+  <header class="container-fluid header">
+    <div class="nav container d-flex justify-content-center align-items-center">
+      <div class="row w-100">
+        <div class="col-lg-2 nav__logo d-flex justify-content-center">
+          <img src="./asset/logoedubit.svg" alt="logo-edubit" />
         </div>
-      </div>
-      <div class="banner container">
-        <div class="row">
-          <div class="col-lg-6 banner__content">
-            <p class="banner__content-heading">
-              Giải Pháp Dạy Học Trực Tuyến Chỉ Cần <span>5 Phút Thao Tác</span>
-            </p>
-            <div class="banner__content-description">
-              <div class="d-flex banner__content-item">
-                <img src="./asset/hand-click-3d.png" alt="hand-click" />
-                <p>Hệ thống e-learning chuyên nghiệp</p>
-              </div>
-              <div class="d-flex banner__content-item">
-                <img src="./asset/hand-click-3d.png" alt="hand-click" />
-                <p>Bảo mật bài giảng, chống download</p>
-              </div>
-              <div class="d-flex banner__content-item">
-                <img src="./asset/hand-click-3d.png" alt="hand-click" />
-                <p>Phòng học ảo tương tác đa chiều</p>
-              </div>
-              <div class="d-flex banner__content-item">
-                <img src="./asset/hand-click-3d.png" alt="hand-click" />
-                <p>Tổ chức thi và cấp chứng chỉ</p>
-              </div>
-              <div class="d-flex banner__content-item">
-                <img src="./asset/hand-click-3d.png" alt="hand-click" />
-                <p>Hỗ trợ PC / Laptop / Mobile</p>
-              </div>
-            </div>
-            <div class="banner__content-button">
-              <button type="button" class="btn btn-banner">Sử dụng ngay</button>
-            </div>
-          </div>
-          <div class="col-lg-6 banner__image">
-            <img src="./asset/banner-image.svg" alt="banner-image" />
-          </div>
+        <div class="col-6 nav__menu">
+          <ul class="nav__menu-ul">
+            <li class="dropdown">
+              <button class="btn btn__dropdown dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dịch vụ
+              </button>
+              <ul class="dropdown-menu nav__menu-ul1" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Dịch vụ quay dựng</a>
+                <a class="dropdown-item" href="#">Dịch vụ Onboarding</a>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Quiz</a>
+            </li>
+            <li>
+              <a href="#">Hướng Dẫn</a>
+            </li>
+            <li>
+              <a href="#">Bảng Giá</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </header>
-    <div class="sdata container">
-      <div
-        class="row m-0 w-100 sdata__container d-flex align-items-center justify-content-center"
-      >
-        <div
-          class="sdata__item d-flex flex-column align-items-center justify-content-center"
-        >
-          <p class="sdata__item-title">5000+</p>
-          <p class="sdata__item-description">Khách hàng đã tạo website</p>
-        </div>
-        <div
-          class="sdata__item d-flex flex-column align-items-center justify-content-center"
-        >
-          <p class="sdata__item-title">500.000</p>
-          <p class="sdata__item-description">Học viên đang tham gia học</p>
-        </div>
-        <div
-          class="sdata__item d-flex flex-column align-items-center justify-content-center"
-        >
-          <p class="sdata__item-title">100 Triệu</p>
-          <p class="sdata__item-description">Doanh thu bình quân ngày</p>
+        <div class="col-lg-4 nav__account d-flex justify-content-end">
+          <button type="button" class="btn btn-login">Đăng nhập</button>
+          <button type="button" class="btn btn-signin">
+            Tạo Website ngay
+          </button>
+          <ul class="nav__ul-menu menu-choselang">
+            <li class="dropdown show">
+              <button type="button" class="nav-link dropdown-toggle not-focus menu-choselang__button "
+                data-toggle="dropdown" href="#" aria-controls="option" aria-selected="false" aria-haspopup="true"
+                aria-expanded="true">
+                <img src="https://edubit.vn/statics/home/images/vi.svg" alt="Viet Nam">
+              </button>
+              <div class="dropdown-menu show  menu-choselang__menu" aria-labelledby="navbarDropdown"
+                x-placement="bottom-start"
+                style="position: absolute; transform: translate3d(0px, 53px, 0px); top: 0px; left: 0px; will-change: transform;">
+                <a href="#" class="chose-lang-item" data-id="vi"><img src="https://edubit.vn/statics/home/images/vi.svg"
+                    alt="Viet Nam"></a>
+                <a # class="chose-lang-item" data-id="en"><img src="https://edubit.vn/statics/home/images/en.svg"
+                    alt="English"></a>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div
-      class="content p-0 container d-flex flex-column justify-content-center align-items-center"
-    >
-      <div class="content__title">
-        <p>Sở hữu website <span>Dạy học trực tuyến</span></p>
-      </div>
-      <div class="content__description">
-        <p>
-          Sở hữu ngay website dạy học trực tuyến dễ dàng mà không cần phải lo
-          lắng về công nghệ hay vận hành website tiết kiệm 90% chi phí và thời
-          gian so với tổ chức học offline truyền thống. Bạn chỉ cần tập trung
-          chất lượng và phân phối với hàng ngàn học viên
-        </p>
-      </div>
-      <div class="content__feature container px-7">
-        <div class="row m-0 custom-gutter">
-          <div class="col-lg-4">
-            <div class="content__item">
-              <img src="./asset/ten-mien.png" alt="gắn-tên-miền-riêng" />
-              <p class="content__item-title">Gắn tên miền riêng</p>
-              <p class="content__item-description">
-                Sau khi tạo website bạn có thể gắn tên miền riêng bất kỳ lúc nào
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="content__item">
-              <img src="./asset/thanh-toan.png" alt="thanh-toan-thuan-tien" />
-              <p class="content__item-title">Thanh toán thuận tiện</p>
-              <p class="content__item-description">
-                Tích hợp có hầu hết các kênh thanh toán phổ biến:Visa/Master,
-                Internet Banking, MoMo,..
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="content__item">
-              <img src="./asset/affiliate.png" alt="affiliate" />
-              <p class="content__item-title">Tích hợp Affiliate</p>
-              <p class="content__item-description">
-                Dễ dàng theo dõi doanh số,hoa hồng cho CTV, Sale ...
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="content__item">
-              <img
-                src="./asset/tuy-chinh-giao-dien.png"
-                alt="tuy-chinh-giao-dien"
-              />
-              <p class="content__item-title">Tùy chỉnh giao diện</p>
-              <p class="content__item-description">
-                Bạn có thể điều chỉnh bố cục,hình ảnh, màu sắc và nội dung theo
-                ý bạn
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="content__item">
-              <img src="./asset/nang-cap.png" alt="nang-cap" />
-              <p class="content__item-title">Liên tục nâng cấp</p>
-              <p class="content__item-description">
-                Chức năng mới sẽ liên tục được bổ sung, nâng cấp customizetheo
-                nhu cầu từng khách hàng.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="content__item">
-              <img src="./asset/moi-noi.png" alt="moi-noi" />
-              <p class="content__item-title">Mọi lúc - Mọi nơi</p>
-              <p class="content__item-description">
-                Chỉ cần Laptop hoặc SmartPhonekết nối InternetDạy & Học qua Web
-                và App
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container init">
-      <div class="row init__container">
-        <div class="col-lg-6 d-flex-center h-100 init__image">
-          <img src="./asset/khoi-tao-image.png" alt="khoi-tao" />
-        </div>
-        <div class="col-lg-6 h-100">
-          <div class="init__content">
-            <p class="init__content-heading">Khởi tạo website ngay</p>
-            <p class="init__content-description">
-              Cùng bạn lan tỏa tri thức đến hàng triệu người , sở hữu ngay
-              website và hoàn toàn miễn phí
-            </p>
-            <button type="button" class="btn btn-init">Sử dụng miễn phí</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container function">
+    <div class="banner container">
       <div class="row">
-        <div class="col-lg-6 function__left">
-          <div class="function__content">
-            <p class="function__content-title">DẠY HỌC TRỰC TUYẾN QUA VIDEO</p>
-            <p class="function__content-description">
-              Làm 1 lần cung cấp cho hàng ngàn học viên
+        <div class="col-lg-6 banner__content">
+          <p class="banner__content-heading">
+            Giải Pháp Dạy Học Trực Tuyến Chỉ Cần <span>5 Phút Thao Tác</span>
+          </p>
+          <div class="banner__content-description">
+            <div class="d-flex banner__content-item">
+              <img src="./asset/hand-click-3d.png" alt="hand-click" />
+              <p>Hệ thống e-learning chuyên nghiệp</p>
+            </div>
+            <div class="d-flex banner__content-item">
+              <img src="./asset/hand-click-3d.png" alt="hand-click" />
+              <p>Bảo mật bài giảng, chống download</p>
+            </div>
+            <div class="d-flex banner__content-item">
+              <img src="./asset/hand-click-3d.png" alt="hand-click" />
+              <p>Phòng học ảo tương tác đa chiều</p>
+            </div>
+            <div class="d-flex banner__content-item">
+              <img src="./asset/hand-click-3d.png" alt="hand-click" />
+              <p>Tổ chức thi và cấp chứng chỉ</p>
+            </div>
+            <div class="d-flex banner__content-item">
+              <img src="./asset/hand-click-3d.png" alt="hand-click" />
+              <p>Hỗ trợ PC / Laptop / Mobile</p>
+            </div>
+          </div>
+          <div class="banner__content-button">
+            <button type="button" class="btn btn-banner">Sử dụng ngay</button>
+          </div>
+        </div>
+        <div class="col-lg-6 banner__image">
+          <img src="./asset/banner-image.svg" alt="banner-image" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="sdata container">
+    <div class="row m-0 w-100 sdata__container d-flex align-items-center justify-content-center">
+      <div class="sdata__item d-flex flex-column align-items-center justify-content-center">
+        <p class="sdata__item-title">5000+</p>
+        <p class="sdata__item-description">Khách hàng đã tạo website</p>
+      </div>
+      <div class="sdata__item d-flex flex-column align-items-center justify-content-center">
+        <p class="sdata__item-title">500.000</p>
+        <p class="sdata__item-description">Học viên đang tham gia học</p>
+      </div>
+      <div class="sdata__item d-flex flex-column align-items-center justify-content-center">
+        <p class="sdata__item-title">100 Triệu</p>
+        <p class="sdata__item-description">Doanh thu bình quân ngày</p>
+      </div>
+    </div>
+  </div>
+  <div class="content p-0 container d-flex flex-column justify-content-center align-items-center">
+    <div class="content__title">
+      <p>Sở hữu website <span>Dạy học trực tuyến</span></p>
+    </div>
+    <div class="content__description">
+      <p>
+        Sở hữu ngay website dạy học trực tuyến dễ dàng mà không cần phải lo
+        lắng về công nghệ hay vận hành website tiết kiệm 90% chi phí và thời
+        gian so với tổ chức học offline truyền thống. Bạn chỉ cần tập trung
+        chất lượng và phân phối với hàng ngàn học viên
+      </p>
+    </div>
+    <div class="content__feature container px-7">
+      <div class="row m-0 custom-gutter">
+        <div class="col-lg-4">
+          <div class="content__item">
+            <img src="./asset/ten-mien.png" alt="gắn-tên-miền-riêng" />
+            <p class="content__item-title">Gắn tên miền riêng</p>
+            <p class="content__item-description">
+              Sau khi tạo website bạn có thể gắn tên miền riêng bất kỳ lúc nào
             </p>
-            <div class="d-flex function__content-feature">
-              <div class="feature">
-                <div class="feature__item">
-                  <img src="./asset/edit.svg" alt="edit-icon" />
-                  <p>Tạo bài giảng nhanh chóng</p>
-                </div>
-                <div class="feature__item">
-                  <img src="./asset/upload.svg" alt="upload-icon" />
-                  <p>Upload video thuận tiện</p>
-                </div>
-                <div class="feature__item">
-                  <img src="./asset/attachment.svg" alt="attachment-icon" />
-                  <p>Đính kèm tài liệu, phần mềm</p>
-                </div>
-                <div class="feature__item">
-                  <img src="./asset/left-right .svg" alt="left-right-icon" />
-                  <p>Trao đổi thảo luận với học viên</p>
-                </div>
-              </div>
-              <div class="feature">
-                <div class="feature__item">
-                  <img src="./asset/promo.svg" alt="promo-icon" />
-                  <p>Tạo mã kích hoạt, mã coupon dễ dàng</p>
-                </div>
-                <div class="feature__item">
-                  <img src="./asset/user-settings.svg" alt="user-icon" />
-                  <p>Quản lý đơn hàng, học viên, thu nhập</p>
-                </div>
-                <div class="feature__item">
-                  <img src="./asset/setting.svg" alt="setting-icon" />
-                  <p>Cài đặt bài thi trắc nghiệm</p>
-                </div>
-                <div class="feature__item">
-                  <img src="./asset/eye-scan.svg" alt="theo-doi-icon" />
-                  <p>Theo dõi tiến độ học từng học viên</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-        <div class="col-lg-6 function__right">
-          <img src="./asset/day-hoc-truc-tuyen-image.png" alt="" />
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid bg-orange py-1 mt-5">
-      <div class="container function function-1">
-        <div class="row">
-          <div class="col-lg-6 function__left order-2">
-            <div class="function__content">
-              <p class="function__content-title">
-                TỔ CHỨC THI VÀ CẤP CHỨNG CHỈ
-              </p>
-              <p class="function__content-description">
-                Tạo bài thi nhanh chóng - Theo dõi điểm Học Viên Dễ Dàng
-              </p>
-              <div class="d-flex function__content-feature">
-                <div class="feature">
-                  <div class="feature__item">
-                    <img src="./asset/add-document.svg" alt="tao-de-thi-icon" />
-                    <p>Tạo đề thi dễ dàng, miễn phí</p>
-                  </div>
-                  <div class="feature__item">
-                    <img src="./asset/exam.svg" alt="dang-cau-hoi-icon" />
-                    <p>7 Dạng câu hỏi khác nhau</p>
-                  </div>
-                  <div class="feature__item">
-                    <img src="./asset/trophy.svg" alt="top-diem-thi-icon" />
-                    <p>TOP 10 điểm thi cao nhất</p>
-                  </div>
-                </div>
-                <div class="feature">
-                  <div class="feature__item">
-                    <img
-                      src="./asset/stopwatch.svg"
-                      alt="dau-truong-thoi-gian-icon"
-                    />
-                    <p>Đấu trường thời gian thực</p>
-                  </div>
-                  <div class="feature__item">
-                    <img src="./asset/share.svg" alt="share-icon" />
-                    <p>Dễ dàng chia sẻ</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="col-lg-4">
+          <div class="content__item">
+            <img src="./asset/thanh-toan.png" alt="thanh-toan-thuan-tien" />
+            <p class="content__item-title">Thanh toán thuận tiện</p>
+            <p class="content__item-description">
+              Tích hợp có hầu hết các kênh thanh toán phổ biến:Visa/Master,
+              Internet Banking, MoMo,..
+            </p>
           </div>
-          <div class="col-lg-6 function__right order-1">
-            <img src="./asset/chung-chi.png" alt="chung-chi-image" />
+        </div>
+        <div class="col-lg-4">
+          <div class="content__item">
+            <img src="./asset/affiliate.png" alt="affiliate" />
+            <p class="content__item-title">Tích hợp Affiliate</p>
+            <p class="content__item-description">
+              Dễ dàng theo dõi doanh số,hoa hồng cho CTV, Sale ...
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="content__item">
+            <img src="./asset/tuy-chinh-giao-dien.png" alt="tuy-chinh-giao-dien" />
+            <p class="content__item-title">Tùy chỉnh giao diện</p>
+            <p class="content__item-description">
+              Bạn có thể điều chỉnh bố cục,hình ảnh, màu sắc và nội dung theo
+              ý bạn
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="content__item">
+            <img src="./asset/nang-cap.png" alt="nang-cap" />
+            <p class="content__item-title">Liên tục nâng cấp</p>
+            <p class="content__item-description">
+              Chức năng mới sẽ liên tục được bổ sung, nâng cấp customizetheo
+              nhu cầu từng khách hàng.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="content__item">
+            <img src="./asset/moi-noi.png" alt="moi-noi" />
+            <p class="content__item-title">Mọi lúc - Mọi nơi</p>
+            <p class="content__item-description">
+              Chỉ cần Laptop hoặc SmartPhonekết nối InternetDạy & Học qua Web
+              và App
+            </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="container function function-2">
+  </div>
+  <div class="container init">
+    <div class="row init__container">
+      <div class="col-lg-6 d-flex-center h-100 init__image">
+        <img src="./asset/khoi-tao-image.png" alt="khoi-tao" />
+      </div>
+      <div class="col-lg-6 h-100">
+        <div class="init__content">
+          <p class="init__content-heading">Khởi tạo website ngay</p>
+          <p class="init__content-description">
+            Cùng bạn lan tỏa tri thức đến hàng triệu người , sở hữu ngay
+            website và hoàn toàn miễn phí
+          </p>
+          <button type="button" class="btn btn-init">Sử dụng miễn phí</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container function">
+    <div class="row">
+      <div class="col-lg-6 function__left">
+        <div class="function__content">
+          <p class="function__content-title">DẠY HỌC TRỰC TUYẾN QUA VIDEO</p>
+          <p class="function__content-description">
+            Làm 1 lần cung cấp cho hàng ngàn học viên
+          </p>
+          <div class="d-flex function__content-feature">
+            <div class="feature">
+              <div class="feature__item">
+                <img src="./asset/edit.svg" alt="edit-icon" />
+                <p>Tạo bài giảng nhanh chóng</p>
+              </div>
+              <div class="feature__item">
+                <img src="./asset/upload.svg" alt="upload-icon" />
+                <p>Upload video thuận tiện</p>
+              </div>
+              <div class="feature__item">
+                <img src="./asset/attachment.svg" alt="attachment-icon" />
+                <p>Đính kèm tài liệu, phần mềm</p>
+              </div>
+              <div class="feature__item">
+                <img src="./asset/left-right .svg" alt="left-right-icon" />
+                <p>Trao đổi thảo luận với học viên</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__item">
+                <img src="./asset/promo.svg" alt="promo-icon" />
+                <p>Tạo mã kích hoạt, mã coupon dễ dàng</p>
+              </div>
+              <div class="feature__item">
+                <img src="./asset/user-settings.svg" alt="user-icon" />
+                <p>Quản lý đơn hàng, học viên, thu nhập</p>
+              </div>
+              <div class="feature__item">
+                <img src="./asset/setting.svg" alt="setting-icon" />
+                <p>Cài đặt bài thi trắc nghiệm</p>
+              </div>
+              <div class="feature__item">
+                <img src="./asset/eye-scan.svg" alt="theo-doi-icon" />
+                <p>Theo dõi tiến độ học từng học viên</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 function__right">
+        <img src="./asset/day-hoc-truc-tuyen-image.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-orange py-1 mt-5">
+    <div class="container function function-1">
       <div class="row">
-        <div class="col-lg-6 function__left">
+        <div class="col-lg-6 function__left order-2">
           <div class="function__content">
             <p class="function__content-title">
-              BẢO MẬT BÀI GIẢNG CHỐNG DOWNLOAD
+              TỔ CHỨC THI VÀ CẤP CHỨNG CHỈ
             </p>
             <p class="function__content-description">
-              Giúp bạn không phải lo lắng Sợ video Bị tải Lậu - Quay màn hình
+              Tạo bài thi nhanh chóng - Theo dõi điểm Học Viên Dễ Dàng
             </p>
             <div class="d-flex function__content-feature">
               <div class="feature">
                 <div class="feature__item">
-                  <img src="./asset/upload1.svg" alt="download-icon" />
-                  <p>Hạn chế download video bài giảng</p>
+                  <img src="./asset/add-document.svg" alt="tao-de-thi-icon" />
+                  <p>Tạo đề thi dễ dàng, miễn phí</p>
                 </div>
                 <div class="feature__item">
-                  <img src="./asset/person.svg" alt="no-share-icon" />
-                  <p>Chống chia sẻ tài khoản</p>
+                  <img src="./asset/exam.svg" alt="dang-cau-hoi-icon" />
+                  <p>7 Dạng câu hỏi khác nhau</p>
                 </div>
                 <div class="feature__item">
-                  <img src="./asset/no-video.svg" alt="no-video-icon" />
-                  <p>Hạn chế quay màn hình</p>
+                  <img src="./asset/trophy.svg" alt="top-diem-thi-icon" />
+                  <p>TOP 10 điểm thi cao nhất</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__item">
+                  <img src="./asset/stopwatch.svg" alt="dau-truong-thoi-gian-icon" />
+                  <p>Đấu trường thời gian thực</p>
+                </div>
+                <div class="feature__item">
+                  <img src="./asset/share.svg" alt="share-icon" />
+                  <p>Dễ dàng chia sẻ</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 function__right">
-          <img src="./asset/bao-mat.png" alt="bao-mat-image" />
+        <div class="col-lg-6 function__right order-1">
+          <img src="./asset/chung-chi.png" alt="chung-chi-image" />
         </div>
       </div>
     </div>
-    <div class="container advise">
-      <div class="row d-flex-center">
-        <div class="col-lg-9 advise__col d-flex">
-          <div class="advise__image">
-            <img src="./asset/tu-van.png" alt="tu-van" />
-          </div>
-          <div class="advise__content">
-            <p class="advise__content-title">
-              TƯ VẤN WEBSITE DẠY HỌC TRỰC TUYẾN
-            </p>
-            <p class="advise__content-description">
-              Hãy để lại thông tin để chúng tôi gọi lại cho bạn
-            </p>
-            <div class="advise__content-input">
-              <form action=" ">
-                <div class="input-group advise-input">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Họ và tên"
-                    name="hoten"
-                  />
-                </div>
-                <div class="input-group advise-input">
-                  <input
-                    type="tel"
-                    class="form-control"
-                    placeholder="Số điện thoại"
-                    name="phone"
-                  />
-                </div>
-              </form>
+  </div>
+  <div class="container function function-2">
+    <div class="row">
+      <div class="col-lg-6 function__left">
+        <div class="function__content">
+          <p class="function__content-title">
+            BẢO MẬT BÀI GIẢNG CHỐNG DOWNLOAD
+          </p>
+          <p class="function__content-description">
+            Giúp bạn không phải lo lắng Sợ video Bị tải Lậu - Quay màn hình
+          </p>
+          <div class="d-flex function__content-feature">
+            <div class="feature">
+              <div class="feature__item">
+                <img src="./asset/upload1.svg" alt="download-icon" />
+                <p>Hạn chế download video bài giảng</p>
+              </div>
+              <div class="feature__item">
+                <img src="./asset/person.svg" alt="no-share-icon" />
+                <p>Chống chia sẻ tài khoản</p>
+              </div>
+              <div class="feature__item">
+                <img src="./asset/no-video.svg" alt="no-video-icon" />
+                <p>Hạn chế quay màn hình</p>
+              </div>
             </div>
-            <button type="button" class="btn btn-call">Gọi cho tôi</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 function__right">
+        <img src="./asset/bao-mat.png" alt="bao-mat-image" />
+      </div>
+    </div>
+  </div>
+  <div class="container advise">
+    <div class="row d-flex-center">
+      <div class="col-lg-9 advise__col d-flex">
+        <div class="advise__image">
+          <img src="./asset/tu-van.png" alt="tu-van" />
+        </div>
+        <div class="advise__content">
+          <p class="advise__content-title">
+            TƯ VẤN WEBSITE DẠY HỌC TRỰC TUYẾN
+          </p>
+          <p class="advise__content-description">
+            Hãy để lại thông tin để chúng tôi gọi lại cho bạn
+          </p>
+          <div class="advise__content-input">
+            <form action=" ">
+              <div class="input-group advise-input">
+                <input type="text" class="form-control" placeholder="Họ và tên" name="hoten" />
+              </div>
+              <div class="input-group advise-input">
+                <input type="tel" class="form-control" placeholder="Số điện thoại" name="phone" />
+              </div>
+            </form>
+          </div>
+          <button type="button" class="btn btn-call">Gọi cho tôi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid footer-bg">
+    <div class="container footer">
+      <div class="row">
+        <div class="col-lg-5 footer__introduce">
+          <div class="footer__introduce-image">
+            <img src="./asset/logo 2.svg" alt="logo-svg" />
+          </div>
+          <p class="footer__introduce-name">
+            CÔNG TY CỔ PHẦN ĐÀO TẠO TRỰC TUYẾN UNICA
+          </p>
+          <p class="footer__introduce-certi">
+            <span>Số chứng nhận đăng kí kinh doanh:</span> 0107695756
+          </p>
+          <p class="footer__introduce-certi">
+            <span>Ngày cấp:</span> 29/10/2018.
+          </p>
+          <p class="footer__introduce-certi">
+            <span>Nơi cấp:</span>
+            Sở kế hoạch và đầu tư thành phố Hà Nội.
+          </p>
+          <div class="footer__introduce-address">
+            <img src="./asset/map.svg" alt="dia-chi-icon" />
+            <p>Địa chỉ: Tầng 3, Số 247 Cầu Giấy, TP.Hà Nội</p>
+          </div>
+          <div class="footer__introduce-address">
+            <img src="./asset/map.svg" alt="dia-chi-icon" />
+            <p>Địa chỉ: P503, 20 Phan Đình Giót, P.2, Q. Tân Bình</p>
+          </div>
+          <p>
+            Hotline: <span class="footer__introduce-phone">0904886098</span>
+          </p>
+          <p>
+            Email hỗ trợ:
+            <span class="footer__introduce-email">cskh@edubit.vn</span>
+          </p>
+        </div>
+        <div class="col-lg-2 footer__link">
+          <p class="text-uppercase footer__link-title">Liên kết nhanh</p>
+          <ul class="footer__link-list">
+            <li class="footer__link-li">
+              <a href="#" class="footer__link-a">Giới thiệu</a>
+            </li>
+            <li><a href="#">Unica</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Bảng giá</a></li>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Điều khoản dịch vụ</a></li>
+            <li><a href="#">Chính sách riêng tư</a></li>
+            <li><a href="#">Chính sách thanh toán</a></li>
+            <li><a href="#">Đăng ký đại lý</a></li>
+            <li><a href="#">Hướng dẫn sử dụng</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 footer__link">
+          <p class="text-uppercase footer__link-title">Tải ứng dụng</p>
+          <div class="footer__link-app">
+            <img src="./asset/appstore.png" alt="app-store" />
+          </div>
+          <div class="footer__link-google">
+            <img src="./asset/googleplay.png" alt="google-store" />
+          </div>
+        </div>
+
+        <div class="col-lg-3 footer__link">
+          <div class="text-uppercase footer__link-title">
+            Kết nối với EduBit
+          </div>
+          <div class="d-flex">
+            <div class="footer__link-fbook">
+              <img src="./asset/Facebook.png" alt="Facebook" />
+            </div>
+            <div class="footer__link-fbook">
+              <img src="./asset/Youtube.png" alt="Facebook" />
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <footer class="container-fluid footer-bg">
-      <div class="container footer">
-        <div class="row">
-          <div class="col-lg-5 footer__introduce">
-            <div class="footer__introduce-image">
-              <img src="./asset/logo 2.svg" alt="logo-svg" />
-            </div>
-            <p class="footer__introduce-name">
-              CÔNG TY CỔ PHẦN ĐÀO TẠO TRỰC TUYẾN UNICA
-            </p>
-            <p class="footer__introduce-certi">
-              <span>Số chứng nhận đăng kí kinh doanh:</span> 0107695756
-            </p>
-            <p class="footer__introduce-certi">
-              <span>Ngày cấp:</span> 29/10/2018.
-            </p>
-            <p class="footer__introduce-certi">
-              <span>Nơi cấp:</span>
-              Sở kế hoạch và đầu tư thành phố Hà Nội.
-            </p>
-            <div class="footer__introduce-address">
-              <img src="./asset/map.svg" alt="dia-chi-icon" />
-              <p>Địa chỉ: Tầng 3, Số 247 Cầu Giấy, TP.Hà Nội</p>
-            </div>
-            <div class="footer__introduce-address">
-              <img src="./asset/map.svg" alt="dia-chi-icon" />
-              <p>Địa chỉ: P503, 20 Phan Đình Giót, P.2, Q. Tân Bình</p>
-            </div>
-            <p>
-              Hotline: <span class="footer__introduce-phone">0904886098</span>
-            </p>
-            <p>
-              Email hỗ trợ:
-              <span class="footer__introduce-email">cskh@edubit.vn</span>
-            </p>
-          </div>
-          <div class="col-lg-2 footer__link">
-            <p class="text-uppercase footer__link-title">Liên kết nhanh</p>
-            <ul class="footer__link-list">
-              <li class="footer__link-li">
-                <a href="#" class="footer__link-a">Giới thiệu</a>
-              </li>
-              <li><a href="#">Unica</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Bảng giá</a></li>
-              <li><a href="#">Affiliate</a></li>
-              <li><a href="#">Điều khoản dịch vụ</a></li>
-              <li><a href="#">Chính sách riêng tư</a></li>
-              <li><a href="#">Chính sách thanh toán</a></li>
-              <li><a href="#">Đăng ký đại lý</a></li>
-              <li><a href="#">Hướng dẫn sử dụng</a></li>
-            </ul>
-          </div>
+    </div>
+  </footer>
+</body>
 
-          <div class="col-lg-2 footer__link">
-            <p class="text-uppercase footer__link-title">Tải ứng dụng</p>
-            <div class="footer__link-app">
-              <img src="./asset/appstore.png" alt="app-store" />
-            </div>
-            <div class="footer__link-google">
-              <img src="./asset/googleplay.png" alt="google-store" />
-            </div>
-          </div>
-
-          <div class="col-lg-3 footer__link">
-            <div class="text-uppercase footer__link-title">
-              Kết nối với EduBit
-            </div>
-            <div class="d-flex">
-              <div class="footer__link-fbook">
-                <img src="./asset/Facebook.png" alt="Facebook" />
-              </div>
-              <div>
-                <img src="./asset/Youtube.png" alt="Youtube" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
