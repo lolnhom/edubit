@@ -272,10 +272,6 @@ body {
   border-radius: 8px;
   font-weight: 600;
 }
-.header .nav__account .menu-choselang li {
-  display: inline-block;
-  position: relative;
-}
 .header .nav__account .menu-choselang li .button.not-focus {
   font-size: 16px;
   font-weight: bold;
@@ -285,6 +281,7 @@ body {
   background: unset;
   border: none;
   color: var(--white);
+  min-height: none;
 }
 .header .nav__account .menu-choselang li .menu-choselang__button {
   background-color: transparent;
@@ -297,11 +294,15 @@ body {
 .header .nav__account .menu-choselang li .menu-choselang__button ::after {
   color: var(--white);
 }
+.header .nav__account .menu-choselang li .menu-choselang__button:focus,
+.header .nav__account .menu-choselang li .menu-choselang__button.focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 .header .nav__account .menu-choselang li .menu-choselang__menu {
   min-width: 5em;
   border: none;
   text-align: center;
-  left: 10px !important;
 }
 .header .nav__account .menu-choselang li .menu-choselang__menu a {
   display: block;

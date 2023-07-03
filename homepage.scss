@@ -277,9 +277,6 @@ body {
       }
       .menu-choselang {
         li {
-          display: inline-block;
-          position: relative;
-
           .button.not-focus {
             font-size: 16px;
             font-weight: bold;
@@ -289,6 +286,7 @@ body {
             background: unset;
             border: none;
             color: var(--white);
+            min-height: none;
           }
           .menu-choselang__button {
             background-color: transparent;
@@ -301,11 +299,17 @@ body {
               color: var(--white);
             }
           }
+          .menu-choselang__button:focus,
+          .menu-choselang__button.focus {
+            outline: none !important;
+            box-shadow: none !important;
+          }
+
           .menu-choselang__menu {
             min-width: 5em;
             border: none;
             text-align: center;
-            left: 10px !important;
+            // left: 10px !important;
             a {
               display: block;
             }
