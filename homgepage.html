@@ -5,144 +5,127 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homepage</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
-
-  <!-- jQuery library -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-
-  <!-- Popper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./homepage.css" />
 </head>
 
 <body>
-  <header class="container-fluid header">
-    <div class="nav container d-flex justify-content-center align-items-center">
-      <div class="row w-100">
-        <div class="col-lg-2 nav__logo d-flex justify-content-center">
-          <img src="./asset/logoedubit.svg" alt="logo-edubit" />
+  <div class="container-fluid header px-0">
+    <div class="container-fluid nav-gradiant">
+
+      <div class="nav container ">
+        <div class="row w-100 d-flex-center">
+          <div class="col-lg-3 nav__logo d-flex justify-content-center">
+            <img src="./asset/logoedubit.svg" alt="logo-edubit" />
+          </div>
+          <div class="col-lg-6 nav__menu">
+            <ul class="nav__menu-ul justify-content-center ">
+              <li class="dropdown">
+                <button class="btn  btn__dropdown dropdown-toggle" type="button" data-toggle="dropdown">Dịch vụ
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu nav__menu-ul1">
+                  <li><a href="#">Dịch vụ quay dựng</a></li>
+                  <li><a href="#">Dịch vụ Onboarding</a></li>
+                 
+                </ul>
+              </li>
+              <li>
+                <a href="#">Quiz</a>
+              </li>
+              <li>
+                <a href="#">Hướng Dẫn</a>
+              </li>
+              <li>
+                <a href="#">Bảng Giá</a>
+              </li>
+            
+            </ul>
+           
+          </div>
+          <div class="col-lg-3 nav__account d-flex justify-content-end align-items-center">
+            <button type="button" class="btn btn-login">Đăng nhập</button>
+            <!-- <button type="button" class="btn btn-signin">
+              Tạo Website ngay
+            </button> -->
+       
+            <ul class="nav__ul-menu menu-choselang d-flex-center">
+              <li class="dropdown">
+                <button class="btn btn__dropdown dropdown-toggle menu-choselang__button d-flex-center " type="button"
+                  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="https://edubit.vn/statics/home/images/vi.svg" alt="Viet Nam">
+                  <span class="caret ml-8"></span>
+                </button>
+                <ul class="dropdown-menu menu-choselang__menu " aria-labelledby="dropdownMenuButton">
+                  <a href="#" class="chose-lang-item" data-id="vi"><img src="https://edubit.vn/statics/home/images/vi.svg"
+                      alt="Viet Nam"></a>
+                  <a # class="chose-lang-item" data-id="en"><img src="https://edubit.vn/statics/home/images/en.svg"
+                      alt="English"></a>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-6 nav__menu">
-          <ul class="nav__menu-ul">
-            <li class="dropdown">
-              <button class="btn btn__dropdown dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dịch vụ
-              </button>
-              <ul class="dropdown-menu nav__menu-ul1" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Dịch vụ quay dựng</a>
-                <a class="dropdown-item" href="#">Dịch vụ Onboarding</a>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Quiz</a>
-            </li>
-            <li>
-              <a href="#">Hướng Dẫn</a>
-            </li>
-            <li>
-              <a href="#">Bảng Giá</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4 nav__account d-flex justify-content-end">
-          <button type="button" class="btn btn-login">Đăng nhập</button>
-          <button type="button" class="btn btn-signin">
-            Tạo Website ngay
-          </button>
-          <!-- <ul class="nav__ul-menu menu-choselang">
-            <li class="dropdown show">
-              <button type="button" class="nav-link dropdown-toggle not-focus menu-choselang__button "
-                data-toggle="dropdown" href="#" aria-controls="option" aria-selected="false" aria-haspopup="true"
-                aria-expanded="true">
-                <img src="https://edubit.vn/statics/home/images/vi.svg" alt="Viet Nam">
-              </button>
-              <div class="dropdown-menu show  menu-choselang__menu" aria-labelledby="navbarDropdown"
-                x-placement="bottom-start"
-                style="position: absolute; transform: translate3d(0px, 53px, 0px); top: 0px; left: 0px; will-change: transform;">
-                <a href="#" class="chose-lang-item" data-id="vi"><img src="https://edubit.vn/statics/home/images/vi.svg"
-                    alt="Viet Nam"></a>
-                <a # class="chose-lang-item" data-id="en"><img src="https://edubit.vn/statics/home/images/en.svg"
-                    alt="English"></a>
+      </div>
+    </div>
+    <div class="container-fluid banner-gradiant">
+      <div class="banner container">
+        <div class="row">
+          <div class="col-lg-6 banner__content">
+            <p class="banner__content-heading">
+              Giải Pháp Dạy Học Trực Tuyến Chỉ Cần <span>5 Phút Thao Tác</span>
+            </p>
+            <div class="banner__content-description">
+              <div class="d-flex banner__content-item">
+                <img src="./asset/hand-click-3d.png" alt="hand-click" />
+                <p>Hệ thống e-learning chuyên nghiệp</p>
               </div>
-            </li>
-          </ul> -->
-          <ul class="nav__ul-menu menu-choselang">
-            <li class="dropdown">
-              <button class="btn btn__dropdown dropdown-toggle menu-choselang__button" type="button"
-                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="https://edubit.vn/statics/home/images/vi.svg" alt="Viet Nam">
-              </button>
-              <ul class="dropdown-menu menu-choselang__menu " aria-labelledby="dropdownMenuButton">
-                <a href="#" class="chose-lang-item" data-id="vi"><img src="https://edubit.vn/statics/home/images/vi.svg"
-                    alt="Viet Nam"></a>
-                <a # class="chose-lang-item" data-id="en"><img src="https://edubit.vn/statics/home/images/en.svg"
-                    alt="English"></a>
-              </ul>
-            </li>
-          </ul>
+              <div class="d-flex banner__content-item">
+                <img src="./asset/hand-click-3d.png" alt="hand-click" />
+                <p>Bảo mật bài giảng, chống download</p>
+              </div>
+              <div class="d-flex banner__content-item">
+                <img src="./asset/hand-click-3d.png" alt="hand-click" />
+                <p>Phòng học ảo tương tác đa chiều</p>
+              </div>
+              <div class="d-flex banner__content-item">
+                <img src="./asset/hand-click-3d.png" alt="hand-click" />
+                <p>Tổ chức thi và cấp chứng chỉ</p>
+              </div>
+              <div class="d-flex banner__content-item">
+                <img src="./asset/hand-click-3d.png" alt="hand-click" />
+                <p>Hỗ trợ PC / Laptop / Mobile</p>
+              </div>
+            </div>
+            <div class="banner__content-button">
+              <button type="button" class="btn btn-banner">Sử dụng ngay</button>
+            </div>
+          </div>
+          <div class="col-lg-6 banner__image">
+            <img src="./asset/banner-image.svg" alt="banner-image" />
+          </div>
         </div>
       </div>
     </div>
-    <div class="banner container">
-      <div class="row">
-        <div class="col-lg-6 banner__content">
-          <p class="banner__content-heading">
-            Giải Pháp Dạy Học Trực Tuyến Chỉ Cần <span>5 Phút Thao Tác</span>
-          </p>
-          <div class="banner__content-description">
-            <div class="d-flex banner__content-item">
-              <img src="./asset/hand-click-3d.png" alt="hand-click" />
-              <p>Hệ thống e-learning chuyên nghiệp</p>
-            </div>
-            <div class="d-flex banner__content-item">
-              <img src="./asset/hand-click-3d.png" alt="hand-click" />
-              <p>Bảo mật bài giảng, chống download</p>
-            </div>
-            <div class="d-flex banner__content-item">
-              <img src="./asset/hand-click-3d.png" alt="hand-click" />
-              <p>Phòng học ảo tương tác đa chiều</p>
-            </div>
-            <div class="d-flex banner__content-item">
-              <img src="./asset/hand-click-3d.png" alt="hand-click" />
-              <p>Tổ chức thi và cấp chứng chỉ</p>
-            </div>
-            <div class="d-flex banner__content-item">
-              <img src="./asset/hand-click-3d.png" alt="hand-click" />
-              <p>Hỗ trợ PC / Laptop / Mobile</p>
-            </div>
-          </div>
-          <div class="banner__content-button">
-            <button type="button" class="btn btn-banner">Sử dụng ngay</button>
-          </div>
-        </div>
-        <div class="col-lg-6 banner__image">
-          <img src="./asset/banner-image.svg" alt="banner-image" />
-        </div>
-      </div>
-    </div>
-  </header>
+  </div>
   <div class="sdata container">
     <div class="row m-0 w-100 sdata__container d-flex align-items-center justify-content-center">
-      <div class="sdata__item d-flex flex-column align-items-center justify-content-center">
+      <div class="sdata__item d-flex-colum-center">
         <p class="sdata__item-title">5000+</p>
         <p class="sdata__item-description">Khách hàng đã tạo website</p>
       </div>
-      <div class="sdata__item d-flex flex-column align-items-center justify-content-center">
+      <div class="sdata__item d-flex-colum-center">
         <p class="sdata__item-title">500.000</p>
         <p class="sdata__item-description">Học viên đang tham gia học</p>
       </div>
-      <div class="sdata__item d-flex flex-column align-items-center justify-content-center">
+      <div class="sdata__item d-flex-colum-center">
         <p class="sdata__item-title">100 Triệu</p>
         <p class="sdata__item-description">Doanh thu bình quân ngày</p>
       </div>
     </div>
   </div>
-  <div class="content p-0 container d-flex flex-column justify-content-center align-items-center">
+  <div class="content px-0 container d-flex-colum-center">
     <div class="content__title">
       <p>Sở hữu website <span>Dạy học trực tuyến</span></p>
     </div>
@@ -154,7 +137,7 @@
         chất lượng và phân phối với hàng ngàn học viên
       </p>
     </div>
-    <div class="content__feature container px-7">
+    <div class="content__feature container px-22">
       <div class="row m-0 custom-gutter">
         <div class="col-lg-4">
           <div class="content__item">
@@ -234,9 +217,9 @@
       </div>
     </div>
   </div>
-  <div class="container function">
-    <div class="row">
-      <div class="col-lg-6 function__left">
+  <div class="container function table-container">
+    <div class="row table-row">
+      <div class="col-lg-6 function__left table-col">
         <div class="function__content">
           <p class="function__content-title">DẠY HỌC TRỰC TUYẾN QUA VIDEO</p>
           <p class="function__content-description">
@@ -282,15 +265,18 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 function__right">
+      <div class="col-lg-6 function__right table-col">
         <img src="./asset/day-hoc-truc-tuyen-image.png" alt="" />
       </div>
     </div>
   </div>
-  <div class="container-fluid bg-orange py-1 mt-5">
-    <div class="container function function-1">
-      <div class="row">
-        <div class="col-lg-6 function__left order-2">
+  <div class="container-fluid bg-orange mt-80">
+    <div class="container function function-1 table-container">
+      <div class="row table-row">
+        <div class="col-lg-6 function__right order-1 table-col">
+          <img src="./asset/chung-chi.png" alt="chung-chi-image" />
+        </div>
+        <div class="col-lg-6 function__left order-2 table-col">
           <div class="function__content">
             <p class="function__content-title">
               TỔ CHỨC THI VÀ CẤP CHỨNG CHỈ
@@ -326,15 +312,12 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 function__right order-1">
-          <img src="./asset/chung-chi.png" alt="chung-chi-image" />
-        </div>
       </div>
     </div>
   </div>
-  <div class="container function function-2">
-    <div class="row">
-      <div class="col-lg-6 function__left">
+  <div class="container function function-2 table-container">
+    <div class="row table-row">
+      <div class="col-lg-6 function__left table-col">
         <div class="function__content">
           <p class="function__content-title">
             BẢO MẬT BÀI GIẢNG CHỐNG DOWNLOAD
@@ -360,7 +343,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 function__right">
+      <div class="col-lg-6 function__right table-col ">
         <img src="./asset/bao-mat.png" alt="bao-mat-image" />
       </div>
     </div>
@@ -380,10 +363,10 @@
           </p>
           <div class="advise__content-input">
             <form action=" ">
-              <div class="input-group advise-input">
+              <div class="input-group advise-input d-flex">
                 <input type="text" class="form-control" placeholder="Họ và tên" name="hoten" />
               </div>
-              <div class="input-group advise-input">
+              <div class="input-group advise-input d-flex">
                 <input type="tel" class="form-control" placeholder="Số điện thoại" name="phone" />
               </div>
             </form>
