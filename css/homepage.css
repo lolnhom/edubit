@@ -135,7 +135,7 @@ table {
 /* font */
 @font-face {
   font-family: Roboto1;
-  src: url(./font/Roboto/Roboto-Regular.ttf);
+  src: url(../font/Roboto/Roboto-Regular.ttf);
 }
 /* Color */
 :root {
@@ -1257,11 +1257,4 @@ body {
 }
 .byemail__service .email-box .email-item__title, .byemail__service .email-box .email-item__number, .byemail__service .email-box .email-item__duration {
   border-bottom: 1px solid rgba(99, 115, 129, 0.05);
-}
-
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus {
-  outline: none;
-  box-shadow: none;
 }/*# sourceMappingURL=homepage.css.map */
