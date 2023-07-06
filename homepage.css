@@ -260,6 +260,7 @@ body {
   background-color: transparent;
   color: var(--white);
   letter-spacing: 1px;
+  padding: 6px 0px;
 }
 .header .nav__menu-ul li .btn__dropdown:focus,
 .header .nav__menu-ul li .btn__dropdown:active:focus {
@@ -815,25 +816,31 @@ body {
 }
 
 /* Price */
-.price {
-  margin-top: 40px;
+.compare {
+  margin-top: 80px;
 }
-.price .price__title {
+.compare .compare__title {
   font-size: 25px;
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--charcoal);
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
-.price .price__button {
+.compare .compare__note {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 32px;
+}
+
+.button-switch {
   width: 300px;
   height: 100%;
-  box-shadow: 0px 4px 15px rgba(65, 93, 112, 0.15);
   border-radius: 24px;
   margin-bottom: 64px;
 }
-.price .price__button .btn-month,
-.price .price__button .btn-year {
+.button-switch .btn-month,
+.button-switch .btn-year {
   font-size: 16px;
   border-radius: 24px;
   border-color: var(--primary-color);
@@ -843,7 +850,7 @@ body {
   color: var(--primary-color);
   background-color: var(--white);
 }
-.price .price__button .btn-year span {
+.button-switch .btn-year span {
   border: 1px solid var(--primary-color);
   font-size: 12px;
   color: var(--primary-color);
@@ -851,28 +858,22 @@ body {
   border-radius: 8px;
   margin-left: 8px;
 }
-.price .price__button .btn-month.active,
-.price .price__button .btn-year.active,
-.price .price__button .btn-year.active > span {
+.button-switch .btn-month.active,
+.button-switch .btn-year.active,
+.button-switch .btn-year.active > span {
   webkit-box-shadow: none;
   box-shadow: none;
   background: linear-gradient(180deg, rgb(35, 159, 240) 0%, rgb(18, 165, 244) 100%);
   color: var(--white);
   font-weight: 600;
 }
-.price .price__button .btn-year.active > span {
+.button-switch .btn-year.active > span {
   border-color: var(--white);
 }
-.price .price__button .btn-month:focus,
-.price .price__button .btn-year:focus {
+.button-switch .btn-month:focus,
+.button-switch .btn-year:focus {
   outline: none;
   outline-offset: none;
-}
-.price .price__note {
-  font-size: 16px;
-  color: var(--primary-color);
-  font-weight: 600;
-  margin-top: 32px;
 }
 
 .pricing-plan {
@@ -965,8 +966,7 @@ body {
   padding: 12px 20px;
   border-radius: 8px;
   margin: 20px 0px;
-  font-weight: 600;
-  letter-spacing: 0.8px;
+  min-width: 105px;
 }
 .btn-pricing a {
   color: var(--white);
@@ -1053,13 +1053,208 @@ body {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-@media screen and (max-width: 900px) {
-  .wrapper .carousel {
-    grid-auto-columns: calc(50% - 9px);
-  }
+.price {
+  margin-top: 80px;
 }
-@media screen and (max-width: 600px) {
-  .wrapper .carousel {
-    grid-auto-columns: 100%;
-  }
+.price__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.price__description {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin: 16px 0px 24px 0px;
+}
+
+.price-table {
+  border: 1px solid #e8eef4;
+  color: #627089;
+}
+.price-table thead tr th {
+  background-color: #e8eef4;
+  border-bottom-width: 0px;
+  color: #3e4b61;
+  vertical-align: middle;
+}
+.price-table thead tr th .price-table__title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.price-table thead tr th .price-table__description {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.price-table thead tr td {
+  border: 1px solid #e8eef4;
+}
+
+.price-table > tbody > tr > td {
+  border: 1px solid #e8eef4;
+  padding: 20px 12px;
+}
+
+.price-table > tbody > tr > td:not(:first-child) {
+  text-align: center;
+}
+
+.icon-color {
+  color: var(--primary-color);
+}
+
+.fa-check::before {
+  font-size: 12px;
+}
+
+.td-colspan {
+  background-color: #e8eef4;
+  font-weight: 600;
+}
+
+.btn-signup {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 9px 22px;
+}
+
+/* Service */
+.service {
+  margin-top: 80px;
+}
+.service__title {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+.service__description {
+  color: var(--dark-blue);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0px 64px 0px;
+}
+.service__description p {
+  max-width: 900px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+.service__description p span {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.service .service-box {
+  color: var(--dark-blue);
+}
+.service .service-box .service-item {
+  box-shadow: 0px 4px 15px rgba(65, 93, 112, 0.15);
+  border-radius: 8px;
+  padding: 12px;
+}
+.service .service-box .service-item__title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.service .service-box .service-item span {
+  font-size: 16px;
+  display: block;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.service .service-box .service-item__price {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px 0px;
+}
+.service .service-box .service-item__link {
+  background-color: var(--primary-color);
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.service .service-box .service-item__link a {
+  color: var(--white);
+  text-decoration: none;
+}
+.service .service-box .service-item:not(:last-child) {
+  margin-right: 16px;
+}
+.service .service-table {
+  margin-top: 40px;
+  border: 1px solid #e8eef4;
+  color: var(--dark-blue);
+  border-radius: 8px;
+  border-radius: 10px;
+}
+.service .service-table thead tr {
+  background-color: #e8eef4;
+}
+.service .service-table thead tr th {
+  border-bottom-width: 0px;
+  border-right: 1px solid #e0e0e0;
+  font-weight: 600;
+  text-align: center;
+}
+.service .service-table tbody tr td {
+  border-bottom-width: 0px;
+  border: 1px solid #e8eef4;
+  text-align: center;
+}
+
+/* Buy Email*/
+.byemail {
+  margin-top: 80px;
+}
+.byemail__title {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: 24px;
+}
+.byemail__service {
+  padding: 0px 8px;
+}
+.byemail__service .email-box {
+  color: var(--dark-blue);
+}
+.byemail__service .email-box .email-item {
+  box-shadow: 0px 4px 15px rgba(65, 93, 112, 0.15);
+  border-radius: 8px;
+  padding: 12px;
+}
+.byemail__service .email-box .email-item__title, .byemail__service .email-box .email-item__number {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.byemail__service .email-box .email-item__number span {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.byemail__service .email-box .email-item__duration {
+  color: var(--primary-color);
+  padding: 10px 0px;
+}
+.byemail__service .email-box .email-item__link {
+  margin: 24px 0px;
+}
+.byemail__service .email-box .email-item__link a {
+  background-color: var(--primary-color);
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: var(--white);
+  text-decoration: none;
+}
+.byemail__service .email-box .email-item__title, .byemail__service .email-box .email-item__number, .byemail__service .email-box .email-item__duration, .byemail__service .email-box .email-item__link {
+  width: 100%;
+  text-align: center;
+}
+.byemail__service .email-box .email-item__title, .byemail__service .email-box .email-item__number, .byemail__service .email-box .email-item__duration {
+  border-bottom: 1px solid rgba(99, 115, 129, 0.05);
 }/*# sourceMappingURL=homepage.css.map */

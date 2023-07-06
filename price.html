@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
   <link rel="stylesheet" href="./homepage.css" />
 </head>
 
@@ -20,7 +21,7 @@
 
       <div class="nav container ">
         <div class="row w-100 d-flex-center">
-          <div class="col-lg-3 nav__logo d-flex justify-content-center">
+          <div class="col-lg-3 nav__logo d-flex ">
             <img src="./asset/logoedubit.svg" alt="logo-edubit" />
           </div>
           <div class="col-lg-9 nav__menu">
@@ -44,8 +45,8 @@
                 <a href="#">Bảng Giá</a>
               </li>
               <li>
-                <ul class="nav__ul-menu menu-choselang d-flex-center">
-                  <li class="dropdown">
+                <ul class="nav__ul-menu menu-choselang ">
+                  <li class="dropdown d-flex justify-content-end">
                     <button class="btn btn__dropdown dropdown-toggle menu-choselang__button d-flex-center "
                       type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                       aria-expanded="false">
@@ -74,16 +75,19 @@
 
 
 
-  <!-- --Bảng giá-- -->
+  <!-- --Bảng so sánh giá-- -->
 
-  <div class="container price text-center">
-    <p class="price__title">BẢNG SO SÁNH TÍNH NĂNG TỪNG GÓI</p>
-    <div class="btn-group btn-toggle price__button ">
+  <div class="container compare text-center">
+    <p class="compare__title">BẢNG SO SÁNH TÍNH NĂNG TỪNG GÓI</p>
+    <div class="btn-group btn-toggle button-switch ">
       <button class="btn btn-lg  btn-month">6 tháng</button>
       <button class="btn btn-lg btn-year  active d-flex-center">12 tháng
         <span>30% OFF</span>
       </button>
     </div>
+
+    <!-- Card Carousel -->
+
     <div class="container card-carousel">
       <div class="row d-flex-center">
         <div class="wrapper">
@@ -170,7 +174,7 @@
             <li class="card">
               <div class="pricing-plan">
                 <div class="pricing-top">
-                  <img src="./asset/free-icon.svg" alt="" class="pricing-img">
+                  <img src="./asset/basic-icon.svg" alt="" class="pricing-img">
                   <div class="pricing-header">Basic</div>
                   <span class="pricing-price">999.000<sup>đ</sup></span>
                   <span class="pricing-month">1 tháng</span>
@@ -241,7 +245,7 @@
                   </li>
                 </ul>
                 <button type="button" class="btn-pricing">
-                  <a href="#/" class="pricing-button is-featured">Dùng thử</a>
+                  <a href="#/" class="pricing-button is-featured">Đăng kí</a>
                 </button>
               </div>
             </li>
@@ -280,7 +284,7 @@
                   </li>
                 </ul>
                 <button type="button" class="btn-pricing">
-                  <a href="#/" class="pricing-button is-featured">Dùng thử</a>
+                  <a href="#/" class="pricing-button is-featured">Đăng kí</a>
                 </button>
               </div>
             </li>
@@ -288,7 +292,7 @@
               <div class="pricing-plan">
                 <div class="pricing-top">
                   <img src="./asset/enterprise-icon.svg" alt="enterprise-icon" class="pricing-img">
-                  <div class="pricing-header">Free</div>
+                  <div class="pricing-header">Enterprise</div>
                   <span class="pricing-price">12.999.000<sup>đ</sup></span>
                   <span class="pricing-month">1 tháng</span>
                   <svg class="pricing_svg" version="1.1" id="Layer_1" preserveAspectRatio="none"
@@ -319,7 +323,7 @@
                   </li>
                 </ul>
                 <button type="button" class="btn-pricing">
-                  <a href="#/" class="pricing-button is-featured">Dùng thử</a>
+                  <a href="#/" class="pricing-button is-featured">Đăng kí</a>
                 </button>
               </div>
             </li>
@@ -329,10 +333,599 @@
 
       </div>
     </div>
-    <p class="price__note">(*) Giá trên đã bao gồm VAT và 1 Website. Hợp đồng tối thiểu 03 tháng</p>
+    <p class="compare__note">(*) Giá trên đã bao gồm VAT và 1 Website. Hợp đồng tối thiểu 03 tháng</p>
   </div>
 
-  <!-- Card Carousel -->
+  <!-- --Bảng giá -- -->
+
+  <div class="container price ">
+    <p class="price__title text-center">BẢNG GIÁ EDUBIT</p>
+    <p class="price__description text-center">GIÁ THUÊ WEBSITE DẠY HỌC TRỰC TUYẾN</p>
+    <div class="d-flex-center">
+      <div class="btn-group btn-toggle button-switch  ">
+        <button class="btn btn-lg  btn-month">6 tháng</button>
+        <button class="btn btn-lg btn-year  active d-flex-center">12 tháng
+          <span>30% OFF</span>
+        </button>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-bordered price-table ">
+        <thead>
+          <tr>
+            <th class="text-justify-center">
+              <p class="price-table__title">Tính năng</p>
+            </th>
+            <th width="13%" class="text-center">
+              <div class="d-flex-colum-center">
+                <div class="price-table__title">Free</div>
+                <div class="price-table__description">Miễn phí</div>
+
+              </div>
+            </th>
+            <th width="13%" class="text-center">
+              <div class="price-table__title">STARTER</div>
+              <div class="price-table__description">569.000<i>đ</i><br><small>/ tháng</small></div>
+            </th>
+            <th width="13%" class="text-center">
+              <div class="price-table__title">BASIC</div>
+              <div class="price-table__description">999.000<i>đ</i><br><small>/ tháng</small></div>
+            </th>
+            <th width="13%" class="text-center">
+              <div class="price-table__title">PRO</div>
+              <div class="price-table__description">1.999.000<i>đ</i><br><small>/ tháng</small></div>
+            </th>
+            <th width="13%" class="text-center">
+              <div class="price-table__title">EXPERT</div>
+              <div class="price-table__description">5.599.000<i>đ</i><br><small>/ tháng</small></div>
+            </th>
+            <th width="13%" class="text-center">
+              <div class="price-table__title">Enterprise</div>
+              <div class="price-table__description">12.999.000<i>đ</i><br><small>/ tháng</small></div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dung lượng lưu trữ Video</td>
+            <td>10GB</td>
+            <td>50GB</td>
+            <td>100GB</td>
+            <td>200GB</td>
+            <td>600GB</td>
+            <td>1TB</td>
+          </tr>
+          <tr>
+            <td>Lưu lượng truy cập</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <td>Tổng số học viên active <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+            </td>
+            <td>50</td>
+            <td>300</td>
+            <td>1.000</td>
+            <td>5.000</td>
+            <td>10.000</td>
+            <td>50.000</td>
+          </tr>
+          <tr>
+            <td>Số lượng nhân viên, giảng viên</td>
+            <td>2</td>
+            <td>5</td>
+            <td>10</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+            <td>Unlimited</td>
+          </tr>
+          <tr>
+            <td>Số lượng email gửi chiến dịch</td>
+            <td>-</td>
+            <td>600/tháng</td>
+            <td>2.000/tháng</td>
+            <td>10.000/tháng</td>
+            <td>20.000/tháng</td>
+            <td>100.000/tháng</td>
+          </tr>
+          <tr>
+            <td>Khóa học video</td>
+            <td>5</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Bộ đề thi online</td>
+            <td>5</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Bộ tài liệu</td>
+            <td>5</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Danh mục</td>
+            <td>5</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Bài viết blog</td>
+            <td>20</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Quiz Online</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Xử lý, thống kê đơn hàng</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Học trên mọi thiết bị</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Thảo luận bài học</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>SEO &amp; Social</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Tích hợp thanh toán online</td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Gắn tên miền riêng</td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td colspan="7" class="td-colspan"><b class="title-table">BẢO MẬT</b></td>
+          </tr>
+          <tr>
+            <td>Bảo mật SSL</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Hạn chế download video bài giảng <i class="fa fa-question-circle-o" aria-hidden="true"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Hạn chế quay màn hình</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Chống chia sẻ tài khoản</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td colspan="7" class="td-colspan"><b class="title-table">TÍNH NĂNG NÂNG CAO</b></td>
+          </tr>
+          <tr>
+            <td>Bán lẻ từng khóa học <i class="fa fa-question-circle-o" aria-hidden="true"></i></td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Bán gói membership</td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Tích hợp Email, SMS, Chatbot <i class="fa fa-question-circle-o" aria-hidden="true"></i></td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Tích hợp Web Push Notification</td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Giao diện mẫu</td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Watermark <i class="fa fa-question-circle-o" aria-hidden="true"></i></td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Affiliate 2 cấp <i class="fa fa-question-circle-o" aria-hidden="true"></i></td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Affiliate tới 10 cấp <i class="fa fa-question-circle-o" aria-hidden="true"></i></i></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Kết nối API</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Popup + Form đăng ký tư vấn</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Bỏ chữ ký "Vận hành bởi Edubit"</td>
+            <td>-</td>
+            <td>-</td>
+            <td>+10%</td>
+            <td>+10%</td>
+            <td>+10%</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td>Thiết kế Web, App riêng</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>Support 1-1: nhóm Zalo / Skype</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td><i class="fas fa-check icon-color"></i></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td><a href="javascript:;" class="btn btn-signup" typ="website" data-code="started">Đăng
+                ký</a></td>
+            <td><a href="javascript:;" class="btn btn-signup" typ="website" data-code="pro">Đăng
+                ký</a></td>
+            <td><a href="javascript:;" class="btn btn-signup" typ="website" data-code="startup">Đăng
+                ký</a></td>
+            <td><a href="javascript:;" class="btn btn-signup" typ="website" data-code="sme">Đăng
+                ký</a></td>
+            <td><a href="javascript:;" class="btn btn-signup" typ="website" data-code="enterprise">Đăng ký</a></td>
+          </tr>
+          <tr>
+            <td colspan="7" class="text-center td-colspan">Giá trên đã bao gồm VAT. Đơn hàng tối thiểu 06 tháng</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+  <!-- --Mua thêm dịch vụ -- -->
+
+  <div class="container service">
+    <div class="text-center service__title">MUA THÊM DỊCH VỤ</div>
+    <div class="text-center service__description">
+      <p>
+        Bạn có thể mua thêm dịch vụ (Nhân viên, Học viên, Dung lượng
+        lưu trữ) bất kỳ lúc nào<br>Giảm <span>5%</span> với đơn hàng trên <span> 3 tháng</span>, Giảm <span>10%</span>
+        với đơn hàng
+        trên <span>6</span> tháng,
+        Giảm <span>15%</span> với
+        đơn hàng trên <span>12</span> tháng
+    </div>
+
+
+    <div class="row m-0 custom-gutter d-flex-center">
+      <div class="col-lg-3 service-box">
+        <div class=" d-flex-colum-center service-item">
+          <p class="service-item__title d-flex-colum-center">+ 2 <span>Nhân viên</span></p>
+          <p class="service-item__price">100.000đ/tháng</p>
+          <div class="service-item__link">
+            <a href="#"> Nâng cấp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 service-box">
+        <div class=" d-flex-colum-center service-item">
+          <p class="service-item__title d-flex-colum-center">+ 1000 <span>Học viên</span></p>
+          <p class="service-item__price">400.000đ/tháng</p>
+          <div class="service-item__link">
+            <a href="#"> Nâng cấp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 service-box">
+        <div class=" d-flex-colum-center service-item">
+          <p class="service-item__title d-flex-colum-center">+ 100GB <span>Dung lượng</span></p>
+          <p class="service-item__price">400.000đ/tháng</p>
+          <div class="service-item__link">
+            <a href="#"> Nâng cấp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row m-0 custom-gutter d-flex justify-content-center">
+      <div class="col-lg-3 ">
+        <table class="table table-bordered service-table">
+          <thead>
+            <tr>
+              <th>Nhân viên</th>
+              <th>Đơn giá/tháng</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>100.000đ</td>
+
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>250.000đ</td>
+
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>350.000đ</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-lg-3 service-box">
+        <table class="table table-bordered service-table">
+          <thead>
+            <tr>
+              <th>Học viên</th>
+              <th>Đơn giá/tháng</th>
+
+          </thead>
+          <tbody>
+            <tr>
+              <td>1000</td>
+              <td>400.000đ</td>
+
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>700.000đ</td>
+
+            </tr>
+            <tr>
+              <td>5000</td>
+              <td>1.250.000đ</td>
+            </tr>
+            <tr>
+              <td>10.000</td>
+              <td>2.000.000đ</td>
+            </tr>
+
+            <tr>
+              <td>20.000</td>
+              <td>3.500.000đ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-lg-3 service-box">
+        <table class="table table-bordered service-table">
+          <thead>
+            <tr>
+              <th>Dung lượng(GB)</th>
+              <th>Đơn giá/tháng</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>100</td>
+              <td>400.000đ</td>
+
+            </tr>
+            <tr>
+              <td>200</td>
+              <td>700.000đ</td>
+
+            </tr>
+            <tr>
+              <td>300</td>
+              <td>900.000đ</td>
+            </tr>
+            <tr>
+              <td>500</td>
+              <td>1.250.000đ</td>
+            </tr>
+            <tr>
+              <td>1000</td>
+              <td>2.000.000đ</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>3.000.000đ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- --Mua thêm email -- -->
+  <div class="container byemail">
+    <p class="byemail__title text-center">MUA THÊM EMAIL GỬI CHIẾN DỊCH </p>
+    <div class="d-flex-center">
+      <div class="btn-group btn-toggle button-switch  ">
+        <button class="btn btn-lg  btn-month">6 tháng</button>
+        <button class="btn btn-lg btn-year  active d-flex-center">12 tháng
+          <span>30% OFF</span>
+        </button>
+      </div>
+    </div>
+    <div class="row m-0 custom-gutter d-flex-center  byemail__service ">
+      <div class="col-lg-3 email-box">
+        <div class=" d-flex-colum-center email-item">
+          <p class="email-item__title">799.000đ</p>
+          <p class="email-item__number d-flex-colum-center">10.000 <span>emails/tháng</span></p>
+          <p class="email-item__duration">Không thời hạn</p>
+          <div class="email-item__link">
+            <a href="#"> Nâng cấp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 email-box">
+        <div class=" d-flex-colum-center email-item">
+          <p class="email-item__title">1.899.000đ</p>
+          <p class="email-item__number d-flex-colum-center">30.000 <span>emails/tháng</span></p>
+          <p class="email-item__duration">Không thời hạn</p>
+          <div class="email-item__link">
+            <a href="#"> Nâng cấp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 email-box">
+        <div class=" d-flex-colum-center email-item">
+          <p class="email-item__title">2.599.000đ</p>
+          <p class="email-item__number d-flex-colum-center">50.000 <span>emails/tháng</span></p>
+          <p class="email-item__duration">Không thời hạn</p>
+          <div class="email-item__link">
+            <a href="#"> Nâng cấp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 email-box">
+        <div class=" d-flex-colum-center email-item">
+          <p class="email-item__title">3.999.000đ</p>
+          <p class="email-item__number d-flex-colum-center">100.000 <span>emails/tháng</span></p>
+          <p class="email-item__duration">Không thời hạn</p>
+          <div class="email-item__link">
+            <a href="#"> Nâng cấp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- --Tư vấn  -->
